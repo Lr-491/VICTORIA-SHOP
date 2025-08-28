@@ -1,0 +1,105 @@
+**plan du site vitrine** clair, structuré et professionnel, adapté à une boutique qui vend des **montres**, fait de la **réparation téléphonique**, vend des **accessoires** et **lunettes**, avec un style moderne :
+
+---
+
+## 🗂️ **Plan du site – Boutique Montres & Services Mobiles**
+
+### 1. **Page d’accueil (`index.html`)**
+
+* **Hero section** avec image/photo de la boutique ou produit phare
+* Slogan / phrase d’accroche
+* Aperçu des 4 activités :
+
+  * Montres
+  * Réparation téléphonique
+  * Accessoires
+  * Lunettes
+* Appels à l’action (bouton “Découvrir” / “Nous contacter”)
+
+---
+
+### 2. **Page À propos (`about.html`)**
+
+* Présentation de la boutique
+* Petite histoire / années d’expérience
+* Valeurs (qualité, confiance, proximité)
+* Photo(s) de l’équipe ou de l’intérieur de la boutique
+
+---
+
+### 3. **Page Nos Services (`services.html`)**
+
+Divisée en 4 sections :
+
+* 🕒 **Montres**
+  Présentation de marques, styles, photos
+* 🔧 **Réparation Téléphonique**
+  Types de réparations, rapidité, garantie
+* 📱 **Accessoires Téléphoniques**
+  Coques, câbles, écouteurs, etc.
+* 👓 **Lunettes**
+  Lunettes de soleil, vues, collections
+
+Possibilité d’ajouter :
+
+* Tarifs approximatifs
+* Témoignages clients
+
+---
+
+### 4. **Page Galerie (`gallery.html`)** *(optionnelle mais recommandée)*
+
+* Photos de produits
+* Photos avant/après réparations
+* Ambiance de la boutique
+
+---
+
+### 5. **Page Contact (`contact.html`)**
+
+* Formulaire de contact (nom, e-mail, message)
+* Carte Google Maps intégrée
+* Coordonnées :
+
+  * Adresse
+  * Téléphone
+  * Horaires
+  * Bouton WhatsApp (contact rapide)
+
+---
+
+### 6. **Pages secondaires (facultatives)**
+
+* **FAQ (`faq.html`)** : répondre aux questions fréquentes (délais, garanties, méthodes de paiement…)
+* **Mentions légales / CGU (`legal.html`)** *(utile si tu veux vendre ce site)*
+
+---
+
+## 📁 Structure des fichiers recommandée :
+
+```
+📁 projet-site-vitrine/
+│
+├── index.html
+├── about.html
+├── services.html
+├── gallery.html
+├── contact.html
+│
+├── 📁 assets/
+│   ├── 📁 css/         → fichiers Tailwind CSS ou custom
+│   ├── 📁 js/          → scripts JS
+│   ├── 📁 images/      → photos de la boutique, logos, etc.
+│
+├── 📁 components/      → (facultatif) navbar.html, footer.html à inclure via JS
+└── netlify.toml        → config déploiement Netlify (si besoin)
+```
+
+---
+
+Souhaites-tu maintenant que je t’aide à créer :
+
+* Le **squelette HTML de toutes ces pages** ?
+* Ou commencer uniquement par **la page d’accueil avec TailwindCSS** déjà en place ?
+
+👉 Dis-moi par quelle partie tu veux commencer.
