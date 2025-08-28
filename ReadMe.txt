@@ -140,3 +140,46 @@ Créer un plan visuel / wireframe ?
 Préparer une page de présentation à montrer au client ? (comme une démo à vendre)
 
 Dis-moi ton besoin immédiat et je te prépare ça dans la foulée.
+
+
+
+    <!-- Navbar ici -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-600">BoutiqueTech</a>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Accueil</a>
+                <a href="./about.html" class="text-gray-700 hover:text-blue-600">À propos</a>
+                <a href="./services.html" class="text-gray-700 hover:text-blue-600">Services</a>
+                <a href="./gallery.html" class="text-gray-700 hover:text-blue-600">Galerie</a>
+                <a href="./contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+            </nav>
+
+            <!-- Menu mobile -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    ☰
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+            <a href="index.html" class="block text-gray-700">Accueil</a>
+            <a href="about.html" class="block text-gray-700">À propos</a>
+            <a href="services.html" class="block text-gray-700">Services</a>
+            <a href="gallery.html" class="block text-gray-700">Galerie</a>
+            <a href="contact.html" class="block text-gray-700">Contact</a>
+        </div>
+    </header>
+
+
+    <!-- Contenu principal -->
+    <main class="py-16 px-4 max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6">À propos de la boutique</h1>
+        <p class="mb-4">Fondée en [année], notre boutique est spécialisée dans la vente de montres, lunettes, et la
+            réparation rapide de téléphones...</p>
+        <p>Nous mettons un point d’honneur à offrir un service de proximité et de qualité, avec des produits soigneusement
+            sélectionnés.</p>
+    </main>
