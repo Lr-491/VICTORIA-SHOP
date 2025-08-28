@@ -4,37 +4,77 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[Nom de la page] - Boutique Montres & Services</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@4.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>VICTORIA SHOP - Boutique Montres & Services</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./src/img/img.webp');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <!-- Glide.js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
 </head>
 
 <body class="bg-white text-gray-900">
     <!-- Navbar ici -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-600">BoutiqueTech</a>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Accueil</a>
+                <a href="./pages/about.html" class="text-gray-700 hover:text-blue-600">À propos</a>
+                <a href="./pages/services.html" class="text-gray-700 hover:text-blue-600">Services</a>
+                <a href="./pages/gallery.html" class="text-gray-700 hover:text-blue-600">Galerie</a>
+                <a href="./pages/contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+            </nav>
+
+            <!-- Menu mobile -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    ☰
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+            <a href="index.html" class="block text-gray-700">Accueil</a>
+            <a href="about.html" class="block text-gray-700">À propos</a>
+            <a href="services.html" class="block text-gray-700">Services</a>
+            <a href="gallery.html" class="block text-gray-700">Galerie</a>
+            <a href="contact.html" class="block text-gray-700">Contact</a>
+        </div>
+    </header>
+
 
     <!-- Contenu principal -->
-    <main class="py-16 px-4 max-w-6xl mx-auto space-y-12">
-        <h1 class="text-3xl font-bold mb-8">Nos Services</h1>
-    
-        <section>
-            <h2 class="text-2xl font-semibold mb-2">🕒 Vente de Montres</h2>
-            <p>Modèles classiques, modernes et de marques variées.</p>
-        </section>
-    
-        <section>
-            <h2 class="text-2xl font-semibold mb-2">🔧 Réparation Téléphonique</h2>
-            <p>Écrans, batteries, diagnostics rapides et garanties incluses.</p>
-        </section>
-    
-        <section>
-            <h2 class="text-2xl font-semibold mb-2">📱 Accessoires Téléphoniques</h2>
-            <p>Coques, chargeurs, écouteurs, protections, etc.</p>
-        </section>
-    
-        <section>
-            <h2 class="text-2xl font-semibold mb-2">👓 Vente de Lunettes</h2>
-            <p>Style, protection et prix abordables pour tous les goûts.</p>
-        </section>
-    </main>
+        <main class="py-16 px-4 max-w-6xl mx-auto space-y-12">
+            <h1 class="text-3xl font-bold mb-8">Nos Services</h1>
+        
+            <section>
+                <h2 class="text-2xl font-semibold mb-2">🕒 Vente de Montres</h2>
+                <p>Modèles classiques, modernes et de marques variées.</p>
+            </section>
+        
+            <section>
+                <h2 class="text-2xl font-semibold mb-2">🔧 Réparation Téléphonique</h2>
+                <p>Écrans, batteries, diagnostics rapides et garanties incluses.</p>
+            </section>
+        
+            <section>
+                <h2 class="text-2xl font-semibold mb-2">📱 Accessoires Téléphoniques</h2>
+                <p>Coques, chargeurs, écouteurs, protections, etc.</p>
+            </section>
+        
+            <section>
+                <h2 class="text-2xl font-semibold mb-2">👓 Vente de Lunettes</h2>
+                <p>Style, protection et prix abordables pour tous les goûts.</p>
+            </section>
+        </main>
 
 
     <!-- Footer ici -->

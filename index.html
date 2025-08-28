@@ -2,68 +2,119 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VICTORIA SHOP - Boutique Montres & Services</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@4.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VICTORIA SHOP - Boutique Montres & Services</title>
+  <link rel="stylesheet" href="./css/output.css" />
+  <style>
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+  url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+  </style>
 </head>
 
-<body class="bg-white text-gray-900">
-    <!-- Navbar ici -->
-     <header class="bg-white shadow-md">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-    <a href="index.html" class="text-xl font-bold text-blue-600">BoutiqueTech</a>
-    
-    <nav class="hidden md:flex space-x-6">
-      <a href="index.html" class="text-gray-700 hover:text-blue-600">Accueil</a>
-      <a href="./pages/about.html" class="text-gray-700 hover:text-blue-600">À propos</a>
-      <a href="./pages/services.html" class="text-gray-700 hover:text-blue-600">Services</a>
-      <a href="./pages/gallery.html" class="text-gray-700 hover:text-blue-600">Galerie</a>
-      <a href="./pages/contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
-    </nav>
+<body class="bg-white text-gray-900 font-sans">
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-extrabold text-blue-600">VICTORIA SHOP</a>
 
-    <!-- Menu mobile -->
-    <div class="md:hidden">
-      <button id="menu-toggle" class="text-gray-700 focus:outline-none">
-        ☰
-      </button>
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600">Accueil</a>
+        <a href="./pages/about.html" class="text-gray-700 hover:text-blue-600">À propos</a>
+        <a href="./pages/services.html" class="text-gray-700 hover:text-blue-600">Services</a>
+        <a href="./pages/gallery.html" class="text-gray-700 hover:text-blue-600">Galerie</a>
+        <a href="./pages/contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-gray-700 text-2xl">☰</button>
+      </div>
     </div>
-  </div>
 
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
-    <a href="index.html" class="block text-gray-700">Accueil</a>
-    <a href="about.html" class="block text-gray-700">À propos</a>
-    <a href="services.html" class="block text-gray-700">Services</a>
-    <a href="gallery.html" class="block text-gray-700">Galerie</a>
-    <a href="contact.html" class="block text-gray-700">Contact</a>
-  </div>
-</header>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+      <a href="index.html" class="block text-gray-700">Accueil</a>
+      <a href="./pages/about.html" class="block text-gray-700">À propos</a>
+      <a href="./pages/services.html" class="block text-gray-700">Services</a>
+      <a href="./pages/gallery.html" class="block text-gray-700">Galerie</a>
+      <a href="./pages/contact.html" class="block text-gray-700">Contact</a>
+    </div>
+  </header>
 
-
-    <!-- Contenu principal -->
-    <main>
-        <section class="h-screen bg-gray-100 flex flex-col justify-center items-center">
-            <h1 class="text-4xl font-bold mb-4">Bienvenue chez VICTORIA SHOP</h1>
-            <p class="text-lg mb-6 text-center">Montres, Réparation Téléphonique, Accessoires & Lunettes</p>
-            <a href="services.html" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Voir nos services</a>
-        </section>
-    
-        <section class="py-16">
-            <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Blocs pour chaque activité -->
-                <div class="bg-white shadow p-6 text-center">🕒 Montres</div>
-                <div class="bg-white shadow p-6 text-center">🔧 Réparation</div>
-                <div class="bg-white shadow p-6 text-center">📱 Accessoires</div>
-                <div class="bg-white shadow p-6 text-center">👓 Lunettes</div>
-            </div>
-        </section>
-    </main>
+  <!-- Hero section -->
+  <section class="hero-bg h-screen flex items-center justify-center text-center text-white px-4 pt-24">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Bienvenue chez VICTORIA SHOP</h1>
+      <p class="text-lg md:text-xl mb-6">Vente des montres, Réparation Téléphonique, Accessoires & Lunettes</p>
+      <a href="./pages/services.html"
+        class="inline-block bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded text-white font-medium">
+        Voir nos services
+      </a>
+    </div>
+  </section>
 
 
-    <!-- Footer ici -->
+  <!-- Services -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-12 text-gray-800">Nos Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  
+        <!-- Montres -->
+        <div class="bg-white p-6 shadow rounded hover:shadow-lg transition text-center">
+          <img src="./image/montres/1.jpeg" alt="Montre" class="w-full h-40 object-cover rounded mb-4 w-full h-40 object-cover rounded mb-4 transform hover:scale-105 transition duration-300">
+          <h3 class="text-xl font-semibold mb-2">Montres</h3>
+          <p class="text-sm text-gray-600">Vente de montres élégantes et modernes pour tous les styles.</p>
+        </div>
+  
+        <!-- Réparation -->
+        <div class="bg-white p-6 shadow rounded hover:shadow-lg transition text-center">
+          <img src="./image/droit-reparation.jpg" alt="Réparation smartphone" class="w-full h-40 object-cover rounded mb-4 w-full h-40 object-cover rounded mb-4 transform hover:scale-105 transition duration-300">
+          <h3 class="text-xl font-semibold mb-2">Réparation</h3>
+          <p class="text-sm text-gray-600">Réparation rapide et garantie pour téléphones et montres.</p>
+        </div>
+  
+        <!-- Accessoires -->
+        <div class="bg-white p-6 shadow rounded hover:shadow-lg transition text-center">
+          <img src="./image/Accessoire.jpg"
+            alt="Accessoires téléphoniques" class="w-full h-40 object-cover rounded mb-4 w-full h-40 object-cover rounded mb-4 transform hover:scale-105 transition duration-300">
+          <h3 class="text-xl font-semibold mb-2">Accessoires</h3>
+          <p class="text-sm text-gray-600">Coques, chargeurs, écouteurs et plus pour votre mobile.</p>
+        </div>
+  
+        <!-- Lunettes -->
+        <div class="bg-white p-6 shadow rounded hover:shadow-lg transition text-center">
+          <img src="./image/lunettes/2.jpeg"
+            alt="Lunettes" class="w-full h-40 object-cover rounded mb-4 w-full h-40 object-cover rounded mb-4 transform hover:scale-105 transition duration-300">
+          <h3 class="text-xl font-semibold mb-2">Lunettes</h3>
+          <p class="text-sm text-gray-600">Sélection de lunettes tendance et adaptées à tous.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
 
-    <script src="/js/main.js"></script>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-6 text-center text-sm text-gray-500">
+    © 2025 VICTORIA SHOP. Tous droits réservés.
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 
 </html>

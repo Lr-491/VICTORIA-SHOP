@@ -1,0 +1,23 @@
+{
+  "name": "victoria_shop",
+  "version": "1.0.0",
+  "description": "\"Site Vitrine .Une boutique qui vend des montres, fait de la réparation, vend des accessoires téléphoniques et des lunettes\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lr-491/VICTORIA-SHOP.git"
+  },
+  "author": "Lawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lr-491/VICTORIA-SHOP/issues"
+  },
+  "homepage": "https://github.com/Lr-491/VICTORIA-SHOP#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  }
+}
