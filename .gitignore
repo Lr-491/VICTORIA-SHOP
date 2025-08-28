@@ -1,0 +1,72 @@
+# Dependances Node
+node_modules/
+
+# Build/output
+dist/
+build/
+.cache/
+.next/
+out/
+
+# Environnements
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Rapports de diagnostic
+report.*.json
+
+# Données runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Couverture de tests
+coverage/
+.nyc_output/
+
+# Caches de build
+.cache/
+.parcel-cache/
+
+# Scripts de build intermediates
+.grunt
+bower_components/
+web_modules/
+build/Release/
+
+# Caches outils
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache*/ # par exemple rts2_cache_cjs, etc.
+
+# Historique REPL
+.node_repl_history
+
+# Archives npm
+*.tgz
+.yarn-integrity
+.yarn/
+
+# IDE & éditeurs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Optional: fichier lock TypeScript
+*.tsbuildinfo
