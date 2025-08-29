@@ -35,6 +35,9 @@
          );
     }
   });
+// document.querySelector("form").addEventListener("submit", function (e) {
+//   alert("Votre message a été envoyé avec succès !");
+// });
 
 document.addEventListener("DOMContentLoaded", function() {
   new SimpleLightbox('.gallery a', { captions: false });
