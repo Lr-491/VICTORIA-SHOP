@@ -18,47 +18,64 @@
 </head>
 
 <body class="bg-white text-gray-900 font-sans">
-  <!-- Navbar -->
-  <header class="bg-white shadow-md fixed w-full z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="index.html" class="text-2xl font-extrabold text-blue-600">VICTORIA SHOP</a>
+<!-- Navbar -->
+<header class="bg-white shadow fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="/index.html" class="text-2xl font-extrabold text-blue-600">VICTORIA SHOP</a>
 
-      <nav class="hidden md:flex space-x-6 font-medium">
-        <a href="index.html" class="text-gray-700 hover:text-blue-600">Accueil</a>
-        <a href="./pages/about.html" class="text-gray-700 hover:text-blue-600">À propos</a>
-        <a href="./pages/services.html" class="text-gray-700 hover:text-blue-600">Services</a>
-        <a href="./pages/gallery.html" class="text-gray-700 hover:text-blue-600">Galerie</a>
-        <a href="./pages/contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
-      </nav>
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6 font-medium">
+      <a href="/index.html" class="nav-link text-gray-700 hover:text-blue-600">Accueil</a>
+      <a href="./pages/about.html" class="nav-link text-gray-700 hover:text-blue-600">À propos</a>
+      <a href="./pages/services.html" class="nav-link text-gray-700 hover:text-blue-600">Services</a>
+      <a href="./pages/gallery.html" class="nav-link text-gray-700 hover:text-blue-600">Galerie</a>
+      <a href="./pages/contact.html" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
+    </nav>
 
-      <!-- Mobile menu button -->
-      <div class="md:hidden">
-        <button id="menu-toggle" class="text-gray-700 text-2xl">☰</button>
+    <!-- Mobile menu button -->
+    <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl focus:outline-none">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-white shadow-inner">
+    <a href="/index.html" class="nav-link block text-gray-700 hover:text-blue-600">Accueil</a>
+    <a href="./pages/about.html" class="nav-link block text-gray-700 hover:text-blue-600">À propos</a>
+    <a href="./pages/services.html" class="nav-link block text-gray-700 hover:text-blue-600">Services</a>
+    <a href="./pages/gallery.html" class="nav-link block text-gray-700 hover:text-blue-600">Galerie</a>
+    <a href="./pages/contact.html" class="nav-link block text-gray-700 hover:text-blue-600">Contact</a>
+  </div>
+</header>
+  <!-- Hero Section -->
+  <section class="hero-bg h-screen bg-gray-100 flex items-center justify-center px-4">
+    <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+      <!-- Colonne Texte -->
+      <div class="pl-8 text-zinc-50 text-center md:text-left space-y-6">
+        <h1 class="text-4xl font-bold">Bienvenue chez VICTORIA SHOP</h1>
+        <p class="text-lg">
+          Ventes de montres, réparation téléphonique, accessoires & lunettes.
+        </p>
+        <p class="text-base text-zinc-50">
+          Chez <strong>VICTORIA SHOP</strong>, nous allions style, qualité et technologie pour vous proposer une
+          sélection unique de <strong>montres élégantes</strong>, d’<strong>accessoires téléphoniques modernes</strong>,
+          de <strong>services de réparation rapides</strong> et de <strong>lunettes tendance</strong>. Offrez à votre
+          quotidien une touche de sophistication et de fiabilité.
+        </p>
+        <a href="services.html"
+          class="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+          Voir nos services
+        </a>
       </div>
-    </div>
 
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
-      <a href="index.html" class="block text-gray-700">Accueil</a>
-      <a href="./pages/about.html" class="block text-gray-700">À propos</a>
-      <a href="./pages/services.html" class="block text-gray-700">Services</a>
-      <a href="./pages/gallery.html" class="block text-gray-700">Galerie</a>
-      <a href="./pages/contact.html" class="block text-gray-700">Contact</a>
-    </div>
-  </header>
+      <!-- Colonne Image -->
+      <div class="flex justify-center md:justify-end">
+        <img src="./image/montres/11-removebg-preview.png" alt="Montre élégante" class="w-full max-w-md rounded shadow-lg object-cover" />
+      </div>
 
-  <!-- Hero section -->
-  <section class="hero-bg h-screen flex items-center justify-center text-center text-white px-4 pt-24">
-    <div>
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Bienvenue chez VICTORIA SHOP</h1>
-      <p class="text-lg md:text-xl mb-6">Vente des montres, Réparation Téléphonique, Accessoires & Lunettes</p>
-      <a href="./pages/services.html"
-        class="inline-block bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded text-white font-medium">
-        Voir nos services
-      </a>
     </div>
   </section>
-
 
   <!-- Services -->
   <section class="py-20 bg-gray-50">
