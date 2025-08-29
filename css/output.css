@@ -292,6 +292,12 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mt-22 {
+    margin-top: calc(var(--spacing) * 22);
+  }
+  .mt-46 {
+    margin-top: calc(var(--spacing) * 46);
+  }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -556,6 +562,10 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .border-l-2 {
     border-left-style: var(--tw-border-style);
     border-left-width: 2px;
@@ -689,6 +699,12 @@
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
+  }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
   }
   .pt-24 {
     padding-top: calc(var(--spacing) * 24);

@@ -16,81 +16,45 @@
     <!-- Glide.js CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
-    <!-- <link rel="stylesheet" href="path/to/simple-lightbox.min.css">
-    <script src="path/to/simple-lightbox.min.js"></script> -->
-    <!-- À mettre dans le <head> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.min.js"></script> -->
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const filterContainer = document.querySelector(".gallery-filter");
-            const galleryItems = document.querySelectorAll(".gallery-item");
-
-            filterContainer.addEventListener("click", (e) => {
-                if (!e.target.classList.contains("filter-item")) return;
-                filterContainer.querySelector(".active").classList.remove("active");
-                e.target.classList.add("active");
-                const filter = e.target.getAttribute("data-filter");
-                galleryItems.forEach(item => {
-                    item.style.display = (filter === "all" || item.classList.contains(filter)) ? "block" : "none";
-                });
-            });
-
-            new SimpleLightbox('.gallery a', { captions: false });
-        });
-    </script> -->
-
+    <!-- SimpleLightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.min.js"></script> 
 </head>
 
 <body class="bg-white text-gray-900">
     <!-- Navbar ici -->
-<header class="bg-white shadow fixed w-full z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="../index.html" class="text-2xl font-extrabold text-blue-600">VICTORIA SHOP</a>
+    <header class="bg-white shadow fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-extrabold text-blue-600">VICTORIA SHOP</a>
 
-        <!-- Desktop Nav -->
-        <nav class="hidden md:flex space-x-6 font-medium">
-            <a href="../index.html" class="nav-link text-gray-700 hover:text-blue-600">Accueil</a>
-            <a href="./about.html" class="nav-link text-gray-700 hover:text-blue-600">À propos</a>
-            <a href="./services.html" class="nav-link text-gray-700 hover:text-blue-600">Services</a>
-            <a href="./gallery.html" class="nav-link text-gray-700 hover:text-blue-600">Galerie</a>
-            <a href="./contact.html" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
-        </nav>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="../index.html" class="nav-link text-gray-700 hover:text-blue-600">Accueil</a>
+                <a href="./about.html" class="nav-link text-gray-700 hover:text-blue-600">À propos</a>
+                <a href="./services.html" class="nav-link text-gray-700 hover:text-blue-600">Services</a>
+                <a href="./gallery.html" class="nav-link text-gray-700 hover:text-blue-600">Galerie</a>
+                <a href="./contact.html" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
+            </nav>
 
-        <!-- Mobile menu button -->
-        <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl focus:outline-none">
-            ☰
-        </button>
-    </div>
+            <!-- Mobile menu button -->
+            <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl focus:outline-none">
+                ☰
+            </button>
+        </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-white shadow-inner">
-        <a href="../index.html" class="nav-link block text-gray-700 hover:text-blue-600">Accueil</a>
-        <a href="./about.html" class="nav-link block text-gray-700 hover:text-blue-600">À propos</a>
-        <a href="./services.html" class="nav-link block text-gray-700 hover:text-blue-600">Services</a>
-        <a href="./gallery.html" class="nav-link block text-gray-700 hover:text-blue-600">Galerie</a>
-        <a href="./contact.html" class="nav-link block text-gray-700 hover:text-blue-600">Contact</a>
-    </div>
-</header>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-6 bg-white shadow-inner pt-8">
+            <a href="../index.html" class="nav-link block text-gray-700 hover:text-blue-600">Accueil</a>
+            <a href="./about.html" class="nav-link block text-gray-700 hover:text-blue-600">À propos</a>
+            <a href="./services.html" class="nav-link block text-gray-700 hover:text-blue-600">Services</a>
+            <a href="./gallery.html" class="nav-link block text-gray-700 hover:text-blue-600">Galerie</a>
+            <a href="./contact.html" class="nav-link block text-gray-700 hover:text-blue-600">Contact</a>
+        </div>
+    </header>
 
 
     <!-- Contenu principal -->
     <main class="py-16 px-4 max-w-6xl mx-auto">
-        <!-- <section class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-10">Notre Galerie</h2>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    <img src="https://images.unsplash.com/photo-1588776814546-2ad043a4e6c4" alt="Montre"
-                        class="rounded shadow hover:scale-105 transition">
-                    <img src="https://images.unsplash.com/photo-1610882642760-4fe2870f1d5e" alt="Réparation"
-                        class="rounded shadow hover:scale-105 transition">
-                    <img src="https://images.unsplash.com/photo-1600267165736-5385791d1517" alt="Accessoire"
-                        class="rounded shadow hover:scale-105 transition">
-                </div>
-            </div>
-        </section> -->
-
         <section class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4">
                 <h2 class="text-3xl font-bold text-center mb-8">Notre Galerie</h2>
@@ -106,65 +70,65 @@
                 <!-- Galerie -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gallery">
                     <!-- Montres -->
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item montres">
+                    <a href="../image/montres/1.jpeg" class="gallery-item montres">
                         <img src="../image/montres/1.jpeg" alt="Montres"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item montres">
+                    <a href="../image/montres/2.jpeg" class="gallery-item montres">
                         <img src="../image/montres/2.jpeg" alt="Montres"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item montres">
+                    <a href="../image/montres/3.jpeg" class="gallery-item montres">
                         <img src="../image/montres/3.jpeg" alt="Montres"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item montres">
+                    <a href="../image/montres/4.jpeg" class="gallery-item montres">
                         <img src="../image/montres/4.jpeg" alt="Montres"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item montres">
+                    <a href="../image/montres/5.jpeg" class="gallery-item montres">
                         <img src="../image/montres/5.jpeg" alt="Montres"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
                     <!-- Lunettes -->
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item lunettes">
+                    <a href="../image/lunettes/1.jpeg" class="gallery-item lunettes">
                         <img src="../image/lunettes/1.jpeg" alt="Montres"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item lunettes">
+                    <a href="../image/lunettes/2.jpeg" class="gallery-item lunettes">
                         <img src="../image/lunettes/2.jpeg" alt="Montres"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item lunettes">
+                    <a href="../image/lunettes/3.jpeg" class="gallery-item lunettes">
                         <img src="../image/lunettes/3.jpeg" alt="Montres"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item lunettes">
+                    <a href="../image/lunettes/4.jpeg" class="gallery-item lunettes">
                         <img src="../image/lunettes/4.jpeg" alt="Montres"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item lunettes">
+                    <a href="../image/lunettes/5.jpeg" class="gallery-item lunettes">
                         <img src="../image/lunettes/5.jpeg" alt="Montres"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
                     <!-- accessoires -->
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item accessoires">
+                    <a href="../image/sandales/1.jpeg" class="gallery-item accessoires">
                         <img src="../image/sandales/1.jpeg" alt="accessoires"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item accessoires">
+                    <a href="../image/sandales/2.jpeg" class="gallery-item accessoires">
                         <img src="../image/sandales/2.jpeg" alt="accessoires"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item accessoires">
+                    <a href="../image/sandales/3.jpeg" class="gallery-item accessoires">
                         <img src="../image/sandales/3.jpeg" alt="accessoires"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item accessoires">
+                    <a href="../image/sandales/4.jpeg" class="gallery-item accessoires">
                         <img src="../image/sandales/4.jpeg" alt="accessoires"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
-                    <a href="URL_IMAGE_GRANDE" class="gallery-item accessoires">
+                    <a href="../image/sandales/5.jpeg" class="gallery-item accessoires">
                         <img src="../image/sandales/5.jpeg" alt="accessoires"
                             class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
                     </a>
@@ -172,53 +136,6 @@
             </div>
         </section>
     </main>
-
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Notre Galerie</h2>
-            <!-- Filtres -->
-            <div class="flex justify-center space-x-4 mb-6 gallery-filter">
-                <button class="filter-item py-2 px-4 bg-blue-600 text-white rounded active" data-filter="all">Tous</button>
-                <button class="filter-item py-2 px-4 bg-gray-200 rounded" data-filter="montres">Montres</button>
-                <button class="filter-item py-2 px-4 bg-gray-200 rounded" data-filter="reparation">Réparation</button>
-                <button class="filter-item py-2 px-4 bg-gray-200 rounded" data-filter="accessoires">Accessoires</button>
-                <button class="filter-item py-2 px-4 bg-gray-200 rounded" data-filter="lunettes">Lunettes</button>
-            </div>
-            <!-- Galerie -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gallery">
-                <!-- Montres -->
-                <a href="https://images.unsplash.com/photo-1588776814546-2ad043a4e6c4?auto=format&fit=crop&w=1000&q=80"
-                    class="gallery-item montres">
-                    <img src="https://images.unsplash.com/photo-1588776814546-2ad043a4e6c4?auto=format&fit=crop&w=400&q=80"
-                        alt="Montre élégante" class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
-                </a>
-                <!-- Réparation -->
-                <a href="https://images.unsplash.com/photo-1610882642760-4fe2870f1d5e?auto=format&fit=crop&w=1000&q=80"
-                    class="gallery-item reparation">
-                    <img src="https://images.unsplash.com/photo-1610882642760-4fe2870f1d5e?auto=format&fit=crop&w=400&q=80"
-                        alt="Réparation téléphone"
-                        class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
-                </a>
-                <!-- Accessoires -->
-                <a href="https://images.unsplash.com/photo-1600267165736-5385791d1517?auto=format&fit=crop&w=1000&q=80"
-                    class="gallery-item accessoires">
-                    <img src="https://images.unsplash.com/photo-1600267165736-5385791d1517?auto=format&fit=crop&w=400&q=80"
-                        alt="Accessoires téléphoniques"
-                        class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
-                </a>
-                <!-- Lunettes -->
-                <a href="https://images.unsplash.com/photo-1617059001438-80e3c632c1fa?auto=format&fit=crop&w=1000&q=80"
-                    class="gallery-item lunettes">
-                    <img src="https://images.unsplash.com/photo-1617059001438-80e3c632c1fa?auto=format&fit=crop&w=400&q=80"
-                        alt="Lunettes tendance" class="w-full h-48 object-cover rounded shadow hover:scale-105 transition">
-                </a>
-                <!-- Tu peux ajouter d'autres images ici de différentes catégories -->
-            </div>
-        </div>
-    </section>
-
-
-
     <!-- Footer -->
     <footer class="bg-gray-900 text-white mt-20">
         <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -299,21 +216,6 @@
         </div>
     </footer>
 
-    <script>
-        const filterContainer = document.querySelector(".gallery-filter");
-            const galleryItems = document.querySelectorAll(".gallery-item");
-
-            filterContainer.addEventListener("click", (e) => {
-                if (!e.target.classList.contains("filter-item")) return;
-                filterContainer.querySelector(".active").classList.remove("active");
-                e.target.classList.add("active");
-                const filter = e.target.getAttribute("data-filter");
-                galleryItems.forEach(item => {
-                    item.style.display = (filter === 'all' || item.classList.contains(filter)) ? 'block' : 'none';
-                });
-            });
-
-    </script>
     <script src="../js/main.js"></script>
 </body>
 
