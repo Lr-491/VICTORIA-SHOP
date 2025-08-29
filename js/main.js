@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
   new SimpleLightbox('.gallery a', { captions: false });
 });
 
-
 // Script for menu button
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
